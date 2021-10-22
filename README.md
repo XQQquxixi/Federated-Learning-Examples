@@ -9,6 +9,7 @@ Our initial result is there indeed exists a difference between non-iid partition
 ### MNIST CNN v.s. SHAKESPEARE LSTM
 This is an example from the original FedAvg paper ***Communication-Efficient Learning of Deep Networks
 from Decentralized Data***, in the non-iid column, although for both tasks there are speed up by using FedAvg, but the speed up for MNIST CNN (2.8X) is smaller than SHAKESPEARE LSTM (95.3X). What makes the difference between these two datasets? 
+
 ![alt text](https://github.com/XQQquxixi/Federated-Learning-Examples/blob/main/imgs/cnn%2Blstm.png)
 
 ### Synthetic Gaussian
