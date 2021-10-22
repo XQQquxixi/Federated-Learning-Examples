@@ -61,15 +61,16 @@ While in the other two cases (long rectangle and big square), the partition effe
 From the smalls square and long rectangle experiments, apparently distance alone does not define hard or easy problems. Our new hypothesis is how heterogeneous  the decision boundaries are in each client defines hard v.s. easy. If this is true then changing local epoch E should make the learning different, concretely easy partition worse off (as clients overfit more), and hard partition better off (maybe). This is aligned with what we observed, but the effect is not significant (this is 12D):
 
 <p float="left">
-  <img src="https://github.com/XQQquxixi/Federated-Learning-Examples/blob/main/imgs/E_easy.png" width="300" height="300">
-  <img src="https://github.com/XQQquxixi/Federated-Learning-Examples/blob/main/imgs/E_hard.png" width="300" height="300">
-  <img src="https://github.com/XQQquxixi/Federated-Learning-Examples/blob/main/imgs/E_iid.png" width="300" height="300">
+  <img src="https://github.com/XQQquxixi/Federated-Learning-Examples/blob/main/imgs/E_easy.png" width="300" height="250">
+  <img src="https://github.com/XQQquxixi/Federated-Learning-Examples/blob/main/imgs/E_hard.png" width="300" height="250">
+  <img src="https://github.com/XQQquxixi/Federated-Learning-Examples/blob/main/imgs/E_iid.png" width="300" height="250">
 </p>
 
 
 ### High Dimensional Gaussian, Non-convex Decision Boundary
 Data Generating Procedure: For d-dim Gaussian, some k, \epsilon > 0, for each i \in [d], generate positive data centered at k(e_i-\epsilon), negative data centered at k(e_i+\epsilon). So there will be 2d clusters of Gaussian in total. E.g. 3d after PCA:
-![alt text](https://github.com/XQQquxixi/Federated-Learning-Examples/blob/main/imgs/3d.png)
+
+<img src="https://github.com/XQQquxixi/Federated-Learning-Examples/blob/main/imgs/3d_partition.png" width="300" height="300">
 
 Partitions: Suppose we have 4 clients.
 1. iid: random shuffle
